@@ -24,6 +24,7 @@ yarn create next-app -e https://github.com/A7med3bdulBaset/next-template
 -  Tailwind CSS class sorting, merging and linting.
 -  ESLint with `eslint-config-next`, `eslint-config-prettier` and `eslint-plugin-tailwindcss`
 -  Prettier with sorting imports and tailwindcss plugin
+-  Github Actions for CI
 
 ## Scripts
 
