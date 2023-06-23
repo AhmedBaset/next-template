@@ -6,18 +6,19 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
 
 jobs:
-  test:
+  ci-check:
     runs-on: ubuntu-latest
-    name: CI-check
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20.x
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Install deps and build (with cache)
-        uses: bahmutov/npm-install@v1.8.32
+      - name: Install pnpm
+        run: |
+          curl -L https://get.pnpm.io/v8.js | node - add --global pnpm@8
 
-      - name: Run checks
-        run: npm run ci-checks
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run ci-check script
+        run: pnpm ci-check
