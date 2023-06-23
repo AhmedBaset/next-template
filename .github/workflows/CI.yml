@@ -1,38 +1,42 @@
-name: CI checks
+name: CI-check
 
 on:
-   push:
-      # branches:
-      #   - main
-   pull_request:
-      types: [opened, synchronize, reopened]
+  pull_request:
+    branches: ["*"]
 
 jobs:
-   CI:
-      runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
+    name: CI-check
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      steps:
-         - uses: actions/checkout@v3
-           with:
-              fetch-depth: 0
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-         - name: Install Node.js
-           uses: actions/setup-node@v3
-           with:
-              node-version: 20.x
+      - uses: pnpm/action-setup@v2.2.4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8.6.1
+          run_install: false
 
-         - name: Get pnpm store directory
-           id: pnpm-cache
-           run: |
-              echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
-         - uses: actions/cache@v3
-           name: Setup pnpm cache
-           with:
-              path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-              key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-              restore-keys: |
-                 ${{ runner.os }}-pnpm-store-
-         - name: Install dependencies
-           run: pnpm install
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Install dependencies
+        run: pnpm install
 
-         - run: pnpm ci-check
+      - run: pnpm ci-check
