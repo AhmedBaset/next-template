@@ -1,5 +1,7 @@
 # Next.js Starter Template
 
+This template is up to Next.js 13.4.7. Please run `npm update` after creating your project.
+
 ## Usage
 
 ```bash
