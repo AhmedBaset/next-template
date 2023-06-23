@@ -1,0 +1,45 @@
+{
+	"name": "next-template",
+	"description": "Next.js Starter Template with TypeScript, Tailwindcss, Shadcn-ui, ESLint, and Prettier",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"lint:fix": "next lint --fix",
+		"preview": "next build && next start",
+		"typecheck": "tsc --noEmit",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"ci-check": "pnpm lint && pnpm typecheck && pnpm format:check"
+	},
+	"dependencies": {
+		"@radix-ui/react-slot": "^1.0.2",
+		"class-variance-authority": "^0.6.0",
+		"clsx": "^1.2.1",
+		"lucide-react": "^0.248.0",
+		"next": "13.4.7",
+		"next-themes": "^0.2.1",
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
+	},
+	"devDependencies": {
+		"@ianvs/prettier-plugin-sort-imports": "^4.0.2",
+		"@types/node": "20.3.1",
+		"@types/react": "18.2.13",
+		"@types/react-dom": "18.2.6",
+		"@typescript-eslint/parser": "^5.60.0",
+		"autoprefixer": "10.4.14",
+		"eslint": "8.43.0",
+		"eslint-config-next": "13.4.7",
+		"postcss": "8.4.24",
+		"prettier": "^2.8.8",
+		"prettier-plugin-tailwindcss": "^0.3.0",
+		"tailwind-merge": "^1.13.2",
+		"tailwindcss": "3.3.2",
+		"tailwindcss-animate": "^1.0.6",
+		"typescript": "5.1.3"
+	}
+}
