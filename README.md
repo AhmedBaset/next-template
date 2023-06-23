@@ -3,7 +3,7 @@
 ## Usage
 
 ```bash
-npx create-next-app -e https://github.com/shadcn/next-template
+npx create-next-app -e https://github.com/A7med3bdulBaset/next-template
 ```
 
 ## Features
