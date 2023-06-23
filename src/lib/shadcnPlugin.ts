@@ -3,11 +3,11 @@ import plugin from "tailwindcss/plugin"
 import colors from "tailwindcss/colors"
 
 export const shadcnPlugin = plugin(
-	function ({ addBase, theme }) {
+ 	({ addBase }) => {
 		addBase({
 			":root": {
 				"--background": "0 0% 100%",
-				"--foreground": "222.2 47.4% 11.2%",
+				"--foreground": "201 50% 10%",
 				"--muted": "210 40% 96.1%",
 				"--muted-foreground": "215.4 16.3% 46.9%",
 				"--popover": "0 0% 100%",
@@ -16,19 +16,16 @@ export const shadcnPlugin = plugin(
 				"--input": "214.3 31.8% 91.4%",
 				"--card": "0 0% 100%",
 				"--card-foreground": "222.2 47.4% 11.2%",
-				"--primary": "279 89% 96%",
-				"--primary-foreground": "271 91% 65%",
-				"--secondary": "210 40% 96.1%",
-				"--secondary-foreground": "222.2 47.4% 11.2%",
-				"--accent": "210 40% 96.1%",
+				"--secondary": "210 40% 90%",
+				"--secondary-foreground": "222 47% 11.2%",
+				"--accent": "210 40% 90%",
 				"--accent-foreground": "222.2 47.4% 11.2%",
-				"--destructive": "0 100% 50%",
-				"--destructive-foreground": "210 40% 98%",
+				"--destructive": "0 100% 40%",
 				"--ring": "215 20.2% 65.1%",
 				"--radius": "0.5rem",
 			},
 			".dark": {
-				"--background": "224 71% 4%",
+				"--background": "215 50% 7%",
 				"--foreground": "213 31% 91%",
 				"--muted": "223 47% 11%",
 				"--muted-foreground": "215.4 16.3% 56.9%",
@@ -36,16 +33,13 @@ export const shadcnPlugin = plugin(
 				"--accent-foreground": "210 40% 98%",
 				"--popover": "224 71% 4%",
 				"--popover-foreground": "215 20.2% 65.1%",
+				"--secondary": "222.2 47.4% 15%",
+				"--secondary-foreground": "210 40% 98%",
 				"--border": "216 34% 17%",
 				"--input": "216 34% 17%",
 				"--card": "224 71% 4%",
 				"--card-foreground": "213 31% 91%",
-				"--primary": "271 91% 65%",
-				"--primary-foreground": "50 70% 90%",
-				"--secondary": "222.2 47.4% 11.2%",
-				"--secondary-foreground": "210 40% 98%",
-				"--destructive": "0 63% 31%",
-				"--destructive-foreground": "210 40% 98%",
+				"--destructive": "0 80% 40%",
 				"--ring": "216 34% 17%",
 				"--radius": "0.5rem",
 			},
@@ -83,13 +77,12 @@ export const shadcnPlugin = plugin(
 						...colors.sky
 					},
 					secondary: {
-						DEFAULT: colors.slate["200"],
-						foreground: colors.slate["700"],
-						...colors.slate
+						DEFAULT: "hsl(var(--secondary))",
+						foreground: "hsl(var(--secondary-foreground))"
 					},
 					destructive: {
-						DEFAULT: colors.rose["500"],
-						foreground: colors.rose["100"],
+						DEFAULT: "hsl(var(--destructive))",
+						foreground: colors.white
 					},
 					muted: {
 						DEFAULT: "hsl(var(--muted))",
