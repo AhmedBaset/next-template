@@ -1,26 +1,38 @@
 name: CI checks
 
 on:
-  push:
-    # branches:
-    #   - main
-  pull_request:
-    types: [opened, synchronize, reopened]
+   push:
+      # branches:
+      #   - main
+   pull_request:
+      types: [opened, synchronize, reopened]
 
 jobs:
-  CI:
-    runs-on: ubuntu-latest
+   CI:
+      runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
+      steps:
+         - uses: actions/checkout@v3
+           with:
+              fetch-depth: 0
 
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20.x
+         - name: Install Node.js
+           uses: actions/setup-node@v3
+           with:
+              node-version: 20.x
 
-      - name: Install deps and build (with cache)
-        uses: bahmutov/npm-install@v1.8.32
+         - name: Get pnpm store directory
+           id: pnpm-cache
+           run: |
+              echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+         - uses: actions/cache@v3
+           name: Setup pnpm cache
+           with:
+              path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+              key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+              restore-keys: |
+                 ${{ runner.os }}-pnpm-store-
+         - name: Install dependencies
+           run: pnpm install
 
-      - name: Run CI checks
-        run: pnpm ci-check
+         - run: pnpm ci-check

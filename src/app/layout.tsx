@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 	},
 }
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 interface RootLayoutProps {
 	children: React.ReactNode
