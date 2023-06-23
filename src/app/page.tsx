@@ -29,7 +29,7 @@ export default function IndexPage() {
 			</div>
 			<div className="space-y-2">
 				<h2 className="text-3xl font-semibold">Included Features:</h2>
-				<ul className="list-disc ps-8 marker:text-2xl marker:text-primary-500/50">
+				<ul className="marker:text-primary-500/50 list-inside ps-8 marker:text-2xl">
 					<li>Next.js 13.4: App Router and Server Actions</li>
 					<li>Typescript</li>
 					<li>Tailwind CSS</li>
@@ -59,7 +59,7 @@ export default function IndexPage() {
 					run <Badge variant="secondary">npm install</Badge> or{" "}
 					<Badge variant="secondary">yarn install</Badge>.
 				</p>
-				<ul className="list-disc ps-8 marker:text-2xl marker:text-primary-500/50">
+				<ul className="marker:text-primary-500/50 list-disc ps-8 marker:text-2xl">
 					<li>
 						<Badge>dev</Badge> Start the development server
 					</li>
@@ -92,7 +92,7 @@ export default function IndexPage() {
 
 			<div className="space-y-2">
 				<h2 className="text-3xl font-semibold">PNPM Cheat Sheet</h2>
-				<ul className="list-disc ps-8 marker:text-2xl marker:text-primary-500/50">
+				<ul className="marker:text-primary-500/50 list-disc ps-8 marker:text-2xl">
 					<li>
 						<Badge>pnpm install</Badge> Install dependencies
 					</li>

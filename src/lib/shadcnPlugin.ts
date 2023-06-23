@@ -1,9 +1,9 @@
+import colors from "tailwindcss/colors"
 import { fontFamily } from "tailwindcss/defaultTheme"
 import plugin from "tailwindcss/plugin"
-import colors from "tailwindcss/colors"
 
 export const shadcnPlugin = plugin(
- 	({ addBase }) => {
+	({ addBase }) => {
 		addBase({
 			":root": {
 				"--background": "0 0% 100%",
@@ -74,15 +74,15 @@ export const shadcnPlugin = plugin(
 					primary: {
 						DEFAULT: colors.sky["500"],
 						foreground: colors.sky["100"],
-						...colors.sky
+						...colors.sky,
 					},
 					secondary: {
 						DEFAULT: "hsl(var(--secondary))",
-						foreground: "hsl(var(--secondary-foreground))"
+						foreground: "hsl(var(--secondary-foreground))",
 					},
 					destructive: {
 						DEFAULT: "hsl(var(--destructive))",
-						foreground: colors.white
+						foreground: colors.white,
 					},
 					muted: {
 						DEFAULT: "hsl(var(--muted))",
