@@ -6,19 +6,23 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
 
 jobs:
-  ci-check:
+  build:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: [15]
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+    - name: Install dependencies
+      run: pnpm install
 
-      - name: Install pnpm
-        run: |
-          curl -L https://get.pnpm.io/v8.js | node - add --global pnpm@8
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Run ci-check script
-        run: pnpm ci-check
+    - name: CI-check
+      run: pnpm run ci-check
