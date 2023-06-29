@@ -8,7 +8,6 @@ This template is up to Next.js 13.4.7. Please run `npm update` after creating yo
 
 ## Features
 
-
 -  Next.js 13 App Directory
 -  Tailwind CSS and [Shadcn/ui](https://ui.shadcn.com)
 -  Icons from [Lucide](https://lucide.dev)
