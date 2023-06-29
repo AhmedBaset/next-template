@@ -1,14 +1,14 @@
 // TODO: Remove this entire file and start your own project from scratch.
 // Happy coding!
 
-import Link from "next/link"
-import { GithubIcon } from "lucide-react"
+import Link from "next/link";
+import { GithubIcon } from "lucide-react";
 
-import { siteConfig } from "@/config/site"
-import { cn } from "@/lib/utils"
-import ThemeToggle from "@/components/ThemeToggle"
-import { Badge } from "@/components/ui/badge"
-import { buttonVariants } from "@/components/ui/button"
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
+import ThemeToggle from "@/components/ThemeToggle";
+import { Badge } from "@/components/ui/badge";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function IndexPage() {
 	return (
@@ -54,9 +54,9 @@ export default function IndexPage() {
 				<h2 className="text-3xl font-semibold">Scripts:</h2>
 				<p className="text-slate-">
 					This template uses <Badge variant="secondary">pnpm</Badge> as the
-					package manager. If you want to use other package managers, you
-					can delete <Badge variant="secondary">pnpm-lock.yaml</Badge> and
-					run <Badge variant="secondary">npm install</Badge> or{" "}
+					package manager. If you want to use other package managers, you can
+					delete <Badge variant="secondary">pnpm-lock.yaml</Badge> and run{" "}
+					<Badge variant="secondary">npm install</Badge> or{" "}
 					<Badge variant="secondary">yarn install</Badge>.
 				</p>
 				<ul className="list-disc ps-8 marker:text-2xl marker:text-primary-500/50">
@@ -97,16 +97,15 @@ export default function IndexPage() {
 						<Badge>pnpm install</Badge> Install dependencies
 					</li>
 					<li>
-						<Badge>pnpm add &lt;dependency&gt;</Badge> Add dependencies
-						(-D for devDependencies)
+						<Badge>pnpm add &lt;dependency&gt;</Badge> Add dependencies (-D for
+						devDependencies)
 					</li>
 					<li>
 						<Badge>pnpm dlx &lt;package&gt;</Badge> like npx
 					</li>
 					<li>
 						<Badge>pnpm run &lt;script&gt;</Badge> Run scripts (or just{" "}
-						<Badge>pnpm &lt;script&gt;</Badge> if there is no command
-						conflict)
+						<Badge>pnpm &lt;script&gt;</Badge> if there is no command conflict)
 					</li>
 					<li>
 						<Badge>pnpm update</Badge> Update dependencies
@@ -114,5 +113,5 @@ export default function IndexPage() {
 				</ul>
 			</div>
 		</main>
-	)
+	);
 }

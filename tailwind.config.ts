@@ -1,6 +1,6 @@
-import { Config } from "tailwindcss"
+import { Config } from "tailwindcss";
 
-import shadcnPlugin from "@/lib/shadcnPlugin"
+import { default as shadcnPlugin } from "./src/lib/shadcnPlugin";
 
 const config = {
 	darkMode: ["class"],
@@ -9,6 +9,6 @@ const config = {
 		require("tailwindcss-animate"),
 		shadcnPlugin,
 	],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

@@ -1,12 +1,12 @@
-import "@/styles/globals.css"
+import "@/styles/globals.css";
 
-import { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Metadata } from "next";
+import { Inter } from "next/font/google";
 
-import { siteConfig } from "@/config/site"
-import { cn } from "@/lib/utils"
-import Providers from "@/components/Providers"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
+import Providers from "@/components/Providers";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 
 export const metadata: Metadata = {
 	title: {
@@ -23,12 +23,12 @@ export const metadata: Metadata = {
 		shortcut: "/favicon-16x16.png",
 		apple: "/apple-touch-icon.png",
 	},
-}
+};
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 interface RootLayoutProps {
-	children: React.ReactNode
+	children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -41,5 +41,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				</Providers>
 			</body>
 		</html>
-	)
+	);
 }

@@ -1,4 +1,4 @@
-export type SiteConfig = typeof siteConfig
+export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
 	name: "Next.js",
@@ -14,4 +14,4 @@ export const siteConfig = {
 	links: {
 		github: "https://github.com/A7med3bdulBaset",
 	},
-}
+};

@@ -4,6 +4,19 @@ This template is up to Next.js 13.4.7. Please run `npm update` after creating yo
 
 [![CI-check](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml/badge.svg)](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml)
 
+## Features
+
+-  Next.js 13 App Directory
+-  Tailwind CSS and [Shadcn/ui](https://ui.shadcn.com)
+-  Icons from [Lucide](https://lucide.dev)
+-  Dark mode with `next-themes`
+
+-  Github Actions for CI
+-  VSCode settings and prefered extensions
+-  ESLint
+-  Prettier with sorting imports
+-  Tailwind CSS class sorting, merging and linting.
+
 ## Usage
 
 ```bash
@@ -17,30 +30,20 @@ npx create-next-app -e https://github.com/A7med3bdulBaset/next-template
 yarn create next-app -e https://github.com/A7med3bdulBaset/next-template
 ```
 
-## Features
-
--  Next.js 13 App Directory
--  Tailwind CSS and [Shadcn/ui](https://ui.shadcn.com)
--  Icons from [Lucide](https://lucide.dev)
--  Dark mode with `next-themes`
--  Tailwind CSS class sorting, merging and linting.
--  ESLint with `eslint-config-next`, `eslint-config-prettier` and `eslint-plugin-tailwindcss`
--  Prettier with sorting imports and tailwindcss plugin
--  Github Actions for CI
 
 ## Scripts
 
 This template uses `pnpm` as the package manager. If you want to use other package managers, you can delete `pnpm-lock.yaml` and run `npm install` or `yarn install`.
 
-- `dev`: Start development server
-- `build`: Build for production
-- `start`: Start production server
-- `preview`: build and start production server
-- `lint`: Lint code
-- `format`: Format code
-- `format:check`: Check code formatting
-- `typecheck`: Check types
-- `ci-check`: Run all checks
+-  `dev`: Start development server
+-  `build`: Build for production
+-  `start`: Start production server
+-  `preview`: build and start production server
+-  `lint`: Lint code
+-  `format`: Format code
+-  `format:check`: Check code formatting
+-  `typecheck`: Check types
+-  `ci-check`: Run all checks
 
 ## Inspiration
 
