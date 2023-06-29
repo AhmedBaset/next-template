@@ -2,10 +2,12 @@
 
 This template is up to Next.js 13.4.7. Please run `npm update` after creating your project.
 
+[![CI-check](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml/badge.svg)](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml)
+
 ## Usage
 
 ```bash
-# with pnpm
+# with pnpm (recommended)
 pnpm dlx create next-app -e https://github.com/A7med3bdulBaset/next-template
 
 # with npm
