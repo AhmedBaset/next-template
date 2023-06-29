@@ -1,11 +1,13 @@
+
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 module.exports = {
-	endOfLine: "lf",
+	endOfLine: "crlf",
 	useTabs: true,
-	semi: false,
+	semi: true,
 	singleQuote: false,
-	tabWidth: 3,
+	tabWidth: 2,
 	trailingComma: "es5",
+	printWidth: 80,
 	importOrder: [
 		"^(react/(.*)$)|^(react$)",
 		"^(next/(.*)$)|^(next$)",
@@ -25,4 +27,4 @@ module.exports = {
 	],
 	importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
 	plugins: ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
-}
+};

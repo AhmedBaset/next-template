@@ -14,7 +14,7 @@
 		"format": "prettier --write  ./src/**/*.{ts,tsx,js,jsx,json,md}",
 		"format:check": "prettier --check ./src/**/*.{ts,tsx,js,jsx,json,md}",
 		"ci-check": "pnpm lint && pnpm typecheck && pnpm format:check",
-      "fix-all": "pnpm lint:fix && pnpm format"
+		"fix-all": "pnpm lint:fix && pnpm format"
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.0.2",
@@ -31,11 +31,13 @@
 		"@types/node": "20.3.1",
 		"@types/react": "18.2.13",
 		"@types/react-dom": "18.2.6",
-		"@typescript-eslint/parser": "^5.60.0",
+		"@typescript-eslint/eslint-plugin": "^5.60.1",
+		"@typescript-eslint/parser": "^5.60.1",
 		"autoprefixer": "10.4.14",
 		"eslint": "8.43.0",
 		"eslint-config-next": "13.4.7",
 		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-tailwindcss": "^3.12.1",
 		"postcss": "8.4.24",
 		"prettier": "^2.8.8",
