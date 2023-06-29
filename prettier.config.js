@@ -1,7 +1,7 @@
 
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 module.exports = {
-	endOfLine: "lf",
+	endOfLine: "crlf",
 	useTabs: true,
 	semi: true,
 	singleQuote: false,
