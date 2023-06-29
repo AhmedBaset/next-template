@@ -2,7 +2,7 @@ import colors from "tailwindcss/colors"
 import { fontFamily } from "tailwindcss/defaultTheme"
 import plugin from "tailwindcss/plugin"
 
-export const shadcnPlugin = plugin(
+const shadcnPlugin = plugin(
 	({ addBase }) => {
 		addBase({
 			":root": {
@@ -127,3 +127,5 @@ export const shadcnPlugin = plugin(
 		},
 	}
 )
+
+export default shadcnPlugin
