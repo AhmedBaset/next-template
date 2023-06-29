@@ -4,7 +4,7 @@ This template is up to Next.js 13.4.7. Please run `npm update` after creating yo
 
 [![CI-check](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml/badge.svg)](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml)
 
-> Note: When you use this template, VScode will prompt you to install recommended extensions and settings.
+> **Note**: When you use this template, VScode will prompt you to install recommended extensions and settings.
 
 ## Features
 
@@ -14,7 +14,7 @@ This template is up to Next.js 13.4.7. Please run `npm update` after creating yo
 -  Dark mode with `next-themes`
 
 -  Github Actions for CI
--  VSCode settings and prefered extensions
+-  VSCode recommended settings & extensions
 -  ESLint
 -  Prettier with sorting imports
 -  Tailwind CSS class sorting, merging and linting.
