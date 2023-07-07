@@ -37,7 +37,7 @@ yarn create next-app -e https://github.com/A7med3bdulBaset/next-template
 
 This template uses `pnpm` as the package manager. If you want to use other package managers, you can delete `pnpm-lock.yaml` and run `npm install` or `yarn install`.
 
--  `dev`: Start development server
+-  `dev`: Start the development server
 -  `build`: Build for production
 -  `start`: Start production server
 -  `preview`: build and start production server
@@ -50,3 +50,7 @@ This template uses `pnpm` as the package manager. If you want to use other packa
 ## Inspiration
 
 Inspired by [next-template](https://github.com/shadcn/next-template) by [Shadcn](https://github.com/shadcn)
+
+## Insites
+
+![Alt](https://repobeats.axiom.co/api/embed/8559085c256a6009a5da6a6c4b1983aafacbc289.svg "Repobeats analytics image")
