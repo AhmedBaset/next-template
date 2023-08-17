@@ -8,5 +8,5 @@ export function cn(...inputs: ClassValue[]) {
 export function absoluteUrl(path: `/${string}`) {
   // TODO
   // if (env.NEXT_PUBLIC_APP_URL) return `${env.NEXT_PUBLIC_APP_URL}${path}`
-  return `http://localhost:3000${path}`
+  return `http://localhost:3000${path}`;
 }
