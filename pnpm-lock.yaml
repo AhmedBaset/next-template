@@ -39,7 +39,7 @@ devDependencies:
     version: 4.1.0(prettier@3.0.2)
   '@t3-oss/env-nextjs':
     specifier: ^0.6.1
-    version: 0.6.1(typescript@5.1.6)(zod@3.21.4)
+    version: 0.6.1(typescript@5.1.6)(zod@3.22.2)
   '@types/node':
     specifier: 20.3.1
     version: 20.3.1
@@ -97,6 +97,9 @@ devDependencies:
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
+  zod:
+    specifier: ^3.22.2
+    version: 3.22.2
 
 packages:
 
@@ -648,25 +651,25 @@ packages:
       tslib: 2.6.0
     dev: false
 
-  /@t3-oss/env-core@0.6.1(typescript@5.1.6)(zod@3.21.4):
+  /@t3-oss/env-core@0.6.1(typescript@5.1.6)(zod@3.22.2):
     resolution: {integrity: sha512-KQD7qEDJtkWIWWmTVjNvk0wnHpkvAQ6CRbUxbWMFNG/fiosBQDQvtRpBNu6USxBscJCoC4z6y7P9MN52/mLOzw==}
     peerDependencies:
       typescript: '>=4.7.2'
       zod: ^3.0.0
     dependencies:
       typescript: 5.1.6
-      zod: 3.21.4
+      zod: 3.22.2
     dev: true
 
-  /@t3-oss/env-nextjs@0.6.1(typescript@5.1.6)(zod@3.21.4):
+  /@t3-oss/env-nextjs@0.6.1(typescript@5.1.6)(zod@3.22.2):
     resolution: {integrity: sha512-z1dIC++Vxj9kmzX5nSPfcrCSkszy3dTEPC4Ssx7Ap5AqR3c2Qa7S0xf8axn6coy7D/vCXDAAnHYnCMDhtcY3SQ==}
     peerDependencies:
       typescript: '>=4.7.2'
       zod: ^3.0.0
     dependencies:
-      '@t3-oss/env-core': 0.6.1(typescript@5.1.6)(zod@3.21.4)
+      '@t3-oss/env-core': 0.6.1(typescript@5.1.6)(zod@3.22.2)
       typescript: 5.1.6
-      zod: 3.21.4
+      zod: 3.22.2
     dev: true
 
   /@ts-morph/common@0.19.0:
@@ -3214,7 +3217,7 @@ packages:
       recast: 0.23.4
       ts-morph: 18.0.0
       tsconfig-paths: 4.2.0
-      zod: 3.21.4
+      zod: 3.22.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3670,3 +3673,8 @@ packages:
 
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: false
+
+  /zod@3.22.2:
+    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
+    dev: true
