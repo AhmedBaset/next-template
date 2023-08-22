@@ -7,12 +7,10 @@ interface ProviderProps {
   children: ReactNode;
 }
 
-function Providers({ children }: ProviderProps) {
+export function Providers({ children }: ProviderProps) {
   return (
     <ThemeProvider enableSystem defaultTheme="system" attribute="class">
       {children}
     </ThemeProvider>
   );
 }
-
-export default Providers;
