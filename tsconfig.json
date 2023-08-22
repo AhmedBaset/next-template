@@ -22,7 +22,8 @@
 		],
 		"paths": {
 			"@/*": ["./src/*"],
-			"@shadcn/*": ["./src/components/ui/*"]
+			"@shadcn/*": ["./src/components/ui/*"],
+			"@env": ["./env.mjs"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "*.ts", ".next/types/**/*.ts"],
