@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import Providers from "@/components/Providers";
+import { Providers } from "@/components/providers";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 
 export const metadata: Metadata = {

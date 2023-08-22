@@ -6,7 +6,7 @@ import { GithubIcon } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import ThemeToggle from "@/components/ThemeToggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { buttonVariants } from "@/components/ui/button";
 
 export default function IndexPage() {
