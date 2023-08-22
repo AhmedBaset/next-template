@@ -3,7 +3,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 const shadcnPlugin = plugin(
-  ({ addBase }) => {
+  ({ addBase, addUtilities, addComponents }) => {
     addBase({
       ":root": {
         "--background": "0 0% 100%",
@@ -54,6 +54,20 @@ const shadcnPlugin = plugin(
         "font-feature-settings": `"rlig" ${1}, "calt" 1`, // This ${1} to make prettier happy
       },
     });
+
+    addComponents({
+      ".flex-center": {
+        display: "flex",
+        "align-items": "center",
+        "justify-content": "center",
+      },
+    });
+
+    addUtilities({
+      ".text-wrap": { "text-wrap": "wrap" },
+      ".text-nowrap": { "text-wrap": "nowrap" },
+      ".text-balance": { "text-wrap": "balance" },
+    });
   },
   {
     theme: {
@@ -72,7 +86,7 @@ const shadcnPlugin = plugin(
           background: "hsl(var(--background))",
           foreground: "hsl(var(--foreground))",
           primary: {
-            DEFAULT: colors.sky["500"],
+            DEFAULT: colors.sky["600"],
             foreground: colors.sky["100"],
             ...colors.sky,
           },
