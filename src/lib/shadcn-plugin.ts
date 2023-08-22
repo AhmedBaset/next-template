@@ -2,21 +2,21 @@ import colors from "tailwindcss/colors";
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
-const shadcnPlugin = plugin(
+export const shadcnPlugin = plugin(
   ({ addBase, addUtilities, addComponents }) => {
     addBase({
       ":root": {
-        "--background": "0 0% 100%",
+        "--background": "0 0% 99.2%",
         "--foreground": "201 50% 10%",
         "--muted": "210 40% 96.1%",
         "--muted-foreground": "215.4 16.3% 46.9%",
         "--popover": "0 0% 100%",
         "--popover-foreground": "222.2 47.4% 11.2%",
         "--border": "214.3 31.8% 91.4%",
-        "--input": "214.3 31.8% 91.4%",
+        "--input": "214.3 31.8% 88%",
         "--card": "0 0% 100%",
         "--card-foreground": "222.2 47.4% 11.2%",
-        "--secondary": "210 40% 90%",
+        "--secondary": "210 40% 96.1%",
         "--secondary-foreground": "222 47% 11.2%",
         "--accent": "210 40% 90%",
         "--accent-foreground": "222.2 47.4% 11.2%",
@@ -25,7 +25,7 @@ const shadcnPlugin = plugin(
         "--radius": "0.5rem",
       },
       ".dark": {
-        "--background": "215 50% 7%",
+        "--background": "215 50% 8%",
         "--foreground": "213 31% 91%",
         "--muted": "223 47% 11%",
         "--muted-foreground": "215.4 16.3% 56.9%",
@@ -33,14 +33,14 @@ const shadcnPlugin = plugin(
         "--accent-foreground": "210 40% 98%",
         "--popover": "224 71% 4%",
         "--popover-foreground": "215 20.2% 65.1%",
-        "--secondary": "222.2 47.4% 15%",
+        "--secondary": "222.2 47.4% 11.2%",
         "--secondary-foreground": "210 40% 98%",
         "--border": "216 34% 17%",
-        "--input": "216 34% 17%",
+        "--input": "216 34% 35%",
         "--card": "224 71% 4%",
         "--card-foreground": "213 31% 91%",
         "--destructive": "0 80% 40%",
-        "--ring": "216 34% 17%",
+        "--ring": "216 34% 25%",
         "--radius": "0.5rem",
       },
     });
@@ -141,5 +141,3 @@ const shadcnPlugin = plugin(
     },
   }
 );
-
-export default shadcnPlugin;
