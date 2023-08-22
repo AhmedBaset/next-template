@@ -4,7 +4,7 @@
 import Link from "next/link";
 import { GithubIcon } from "lucide-react";
 
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "@/config";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { buttonVariants } from "@/components/ui/button";
