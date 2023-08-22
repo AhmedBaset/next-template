@@ -1,6 +1,6 @@
 # Next.js Starter Template
 
-This template is up to Next.js `13.4.17`. Please run `npm update --latest` after creating your project.
+This template is up to Next.js `13.4.19`. Please run `npm update --latest` after creating your project.
 
 [![CI-check](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml/badge.svg)](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml)
 
@@ -49,6 +49,10 @@ This template uses `pnpm` as the package manager. If you want to use other packa
 -  `format:check`: Check code formatting
 -  `typecheck`: Check types
 -  `ci-check`: Run all checks
+
+## TODOs:
+- [ ] Configure `next-auth`
+- [ ] Configure `Prisma`
 
 ## Inspiration
 
