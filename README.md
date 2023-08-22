@@ -50,9 +50,15 @@ This template uses `pnpm` as the package manager. If you want to use other packa
 -  `typecheck`: Check types
 -  `ci-check`: Run all checks
 
+### To install a component from `shadcn/ui` and `radix-ui`:
+```sh
+pnpm shadcn-ui add <component> [--overwrite]
+```
+
 ## TODOs:
 - [ ] Configure `next-auth`
 - [ ] Configure `Prisma`
+- [ ] Configure `Husky`, `lint-staged`
 
 ## Inspiration
 
