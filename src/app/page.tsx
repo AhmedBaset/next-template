@@ -11,8 +11,8 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function IndexPage() {
   return (
-    <main className="container grid items-center gap-6 space-y-4 pb-8 pt-6 md:py-10">
-      <div className="space-y-2">
+    <main className="text-balance container grid max-w-prose items-center gap-6 space-y-4 pb-8 pt-6 md:py-10">
+      <div className="flex min-h-[50vh] flex-col justify-center gap-3">
         <h1 className="text-5xl font-bold">{siteConfig.title}</h1>
         <p className="text-slate-500">{siteConfig.description}</p>
         <div className="space-x-2">
@@ -28,7 +28,7 @@ export default function IndexPage() {
       </div>
       <div className="space-y-2">
         <h2 className="text-3xl font-semibold">Included Features:</h2>
-        <ul className="list-inside ps-8 marker:text-2xl marker:text-primary-500/50">
+        <ul className="list-disc ps-8 marker:text-2xl marker:text-primary-500/50">
           <li>Next.js 13.4: App Router and Server Actions</li>
           <li>Typescript</li>
           <li>Tailwind CSS</li>
@@ -46,7 +46,7 @@ export default function IndexPage() {
 
       <div className="space-y-2">
         <h2 className="text-3xl font-semibold">Scripts:</h2>
-        <p className="text-slate-">
+        <p className="text-opacity-90">
           This template uses{" "}
           <span className="font-bold text-primary">pnpm</span> as the package
           manager. If you want to use other package managers, you can delete{" "}
@@ -125,6 +125,7 @@ export default function IndexPage() {
           </li>
         </ul>
       </div>
+      <div className="-z-10 [background-image:radial-gradient(circle_at_center,#9994_0,transparent,transparent_100%)] w-[50rem] h-[50rem] -bottom-1/3 -right-1/3 fixed rounded-full animate-pulse ![animation-duration:5s]" />
     </main>
   );
 }
