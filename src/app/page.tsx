@@ -11,7 +11,7 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function IndexPage() {
   return (
-    <main className="text-balance container grid max-w-prose items-center gap-6 space-y-4 pb-8 pt-6 md:py-10">
+    <main className="container grid max-w-prose items-center gap-6 space-y-4 pb-8 pt-6 text-balance md:py-10">
       <div className="flex min-h-[50vh] flex-col justify-center gap-3">
         <h1 className="text-5xl font-bold">{siteConfig.title}</h1>
         <p className="text-slate-500">{siteConfig.description}</p>
@@ -125,7 +125,8 @@ export default function IndexPage() {
           </li>
         </ul>
       </div>
-      <div className="-z-10 [background-image:radial-gradient(circle_at_center,#9994_0,transparent,transparent_100%)] w-[50rem] h-[50rem] -bottom-1/3 -right-1/3 fixed rounded-full animate-pulse ![animation-duration:5s]" />
+      {/* eslint-disable-next-line tailwindcss/no-contradicting-classname */}
+      <div className="fixed -bottom-1/3 -right-1/3 -z-10 h-[50rem] w-[50rem] animate-pulse rounded-full ![animation-duration:5s] [background-image:radial-gradient(circle_at_center,#9994_0,transparent,transparent_100%)]" />
     </main>
   );
 }
