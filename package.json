@@ -18,7 +18,7 @@
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.0.2",
-		"class-variance-authority": "^0.6.1",
+		"class-variance-authority": "^0.7.0",
 		"clsx": "^1.2.1",
 		"eslint-plugin-prettier": "^5.0.0",
 		"lucide-react": "^0.248.0",
