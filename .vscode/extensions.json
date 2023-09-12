@@ -6,6 +6,11 @@
     "aaron-bond.better-comments",
     "formulahendry.auto-rename-tag",
     "oderwat.indent-rainbow",
-    "moalamri.inline-fold"
+    "moalamri.inline-fold",
+    "usernamehw.errorlens",
+    "EditorConfig.EditorConfig",
+    "wix.vscode-import-cost",
+    "Cardinal90.multi-cursor-case-preserve",
+    "yoavbls.pretty-ts-errors"
   ]
 }
