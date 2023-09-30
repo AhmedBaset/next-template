@@ -1,6 +1,9 @@
 # Next.js Starter Template
 
-This template is up to Next.js `13.4.19`. Please run `npm update --latest` after creating your project.
+This template is up to Next.js `13.5.3`. Please run `pnpm update --latest` after creating your project.
+
+> [!NOTE]  
+> BTW, [dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates) is already configured in the template.
 
 [![CI-check](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml/badge.svg)](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml)
 
