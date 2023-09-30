@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^0.5.4
     version: 0.5.4(@ianvs/prettier-plugin-sort-imports@4.1.0)(prettier@3.0.2)
   shadcn-ui:
-    specifier: ^0.3.0
-    version: 0.3.0
+    specifier: ^0.4.0
+    version: 0.4.0
   tailwind-merge:
     specifier: ^1.14.0
     version: 1.14.0
@@ -3381,8 +3381,8 @@ packages:
       has-property-descriptors: 1.0.0
     dev: true
 
-  /shadcn-ui@0.3.0:
-    resolution: {integrity: sha512-il58BF1iKc5Np8lcXJWWh2F5G+yW8FXLO1UvzlU8kxK7AOjAo4vdgsDIuF+ypaJAN3hY2rpLcoZoDxCF4imuNA==}
+  /shadcn-ui@0.4.0:
+    resolution: {integrity: sha512-DnEd7pK5kLtzZfgTGT717tOr9gZXmywJ40r37vXqctpILTlLgDEGegmiqeHIvKKGLHxst1tU25NrLECI9uZZQw==}
     hasBin: true
     dependencies:
       '@antfu/ni': 0.21.5
