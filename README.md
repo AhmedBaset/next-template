@@ -3,7 +3,7 @@
 This template is up to Next.js `13.5.3`. Please run `pnpm update --latest` after creating your project.
 
 > [!NOTE]  
-> BTW, [dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates) is already configured in the template.
+> BTW, [dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates) is already configured in the template. this should keep the project up-to-date. Moreover, with your first push to github, It will open PRs to update the dependencies.
 
 [![CI-check](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml/badge.svg)](https://github.com/A7med3bdulBaset/next-template/actions/workflows/CI.yml)
 
