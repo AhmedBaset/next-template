@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 
-// This is just an example of a serverAction
+// Example of a server action
 export async function revalidate(path: `/${string}`) {
   return revalidatePath(path);
 }

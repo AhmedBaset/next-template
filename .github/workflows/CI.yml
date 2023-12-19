@@ -1,31 +1,54 @@
-name: CI-check
+name: CI
 
 on:
-   push:
-   pull_request:
-      types: [opened, synchronize, reopened, ready_for_review]
+  pull_request:
+    branches: ["*"]
+  push:
+    branches: ["develop"]
+  merge_group:
 
 jobs:
-   ci-check:
-      runs-on: ubuntu-latest
-      strategy:
-         matrix:
-            node-version: [16.x]
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-      steps:
-         - uses: actions/checkout@v3
-         - uses: pnpm/action-setup@v2
-           with:
-              version: 8
+      - name: setup
+        uses: ./.github/setup
 
-         - name: Use Node.js ${{ matrix.node-version }}
-           uses: actions/setup-node@v3
-           with:
-              node-version: ${{ matrix.node-version }}
-              cache: "pnpm"
+      - name: Lint
+        run: pnpm next lint
 
-         - name: Install dependencies
-           run: pnpm install
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-         - name: CI-check
-           run: pnpm run ci-check
+      - name: setup
+        uses: ./.github/setup
+
+      - name: Format
+        run: pnpm format:check
+
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup
+        uses: ./.github/setup
+
+      - name: Typecheck
+        run: pnpm type:check
+
+  comment-if-failed:
+    if: ${{ always() }}
+    needs: [lint, format, typecheck]
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - uses: juliusmarminge/gh-failed-action-commenter@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          FIXES: '{ "format": "format", "lint": "lint:fix" }'
