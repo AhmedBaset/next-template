@@ -67,9 +67,6 @@ devDependencies:
   eslint-config-prettier:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.56.0)
-  eslint-plugin-jsx-a11y:
-    specifier: ^6.8.0
-    version: 6.8.0(eslint@8.56.0)
   eslint-plugin-react:
     specifier: ^7.33.2
     version: 7.33.2(eslint@8.56.0)
