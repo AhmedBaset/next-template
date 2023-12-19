@@ -1963,7 +1963,7 @@ packages:
     peerDependencies:
       tailwindcss: ^3.3.2
     dependencies:
-      fast-glob: 3.3.0
+      fast-glob: 3.3.2
       postcss: 8.4.32
       tailwindcss: 3.3.7
     dev: true
