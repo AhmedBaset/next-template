@@ -41,7 +41,7 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-react": "^7.33.2",
 		"eslint-plugin-tailwindcss": "^3.13.0",
-		"postcss": "8.4.32",
+		"postcss": "8.4.36",
 		"prettier": "^3.1.1",
 		"prettier-plugin-tailwindcss": "^0.5.9",
 		"shadcn-ui": "^0.5.0",
