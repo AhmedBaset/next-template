@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Ahmed Abdelbaset",
-      url: "https://github.com/a7med3bdulbaset",
+      url: "https://github.com/AhmedBaset",
     },
   ],
   creator: "a7med3bdulbaset",

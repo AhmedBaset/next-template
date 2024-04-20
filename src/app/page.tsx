@@ -18,7 +18,7 @@ export default function IndexPage() {
         <div className="space-x-2">
           <Link
             className={cn(buttonVariants(), "space-x-2")}
-            href="https://github.com/A7med3bdulBaset/next-template"
+            href="https://github.com/AhmedBaset/next-template"
           >
             <GithubIcon />
             <span>Github</span>
